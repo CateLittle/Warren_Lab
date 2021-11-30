@@ -5,6 +5,14 @@ It is important to note that due to the most recent update of the Raspberry Pi O
 This document will provide methods for how to utilze Bullseye in order to take images with the Pi Camera, and how to get the old Buster OS along with the wifi capabilities. The documentation for the section regarding the Buster version will go into detail on using both command line as well as python programming interfacing with the camera.
 
 
-### Using Camera with Bullseye
+## Using Camera with Bullseye
+Bullseye uses a new libcamera stack 
+#### Getting Started
+First perform a check in the command line to ensure everything is running properly:
+```libcamera-hello ``` This line will display an image on the Pi Camera
 
-### Using Camera with Buster
+
+## Using Camera with Buster
+
+## Sources:
+[Raspberry Pi Camera Doc](https://www.raspberrypi.com/documentation/accessories/camera.html)
