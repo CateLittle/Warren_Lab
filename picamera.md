@@ -21,14 +21,20 @@ There are different applications that can be accessed via the libcamera-apps
 - *libcamera-raw* A basic application for capturing raw (unprocessed Bayer) frames directly from the sensor.
 
 - *libcamera-detect* This application is not built by default, but users can build it if they have TensorFlow Lite installed on their Pi. It captures JPEG images when certain objects are detected.
-
+### Looking at ```libcamera-hello```
 ##### First perform a check in the command line to ensure everything is running properly:
-<br/>```libcamera-hello ``` 
-<br/> This line will display an image on the Pi Camera
+```libcamera-hello ``` 
+This line will start the camera and display a preview window for a few seconds
 
-##### 
+##### Next try the -t<duration> option
+```libcamera-hello -t **0**```
+This allows the user to input whatever they desire for 0 as the duration in miliseconds that the image will be displayed
+
+#### 
 
 ## Using Camera with Buster
 
 ## Sources:
 [Raspberry Pi Camera Doc](https://www.raspberrypi.com/documentation/accessories/camera.html)
+[More Command Line Documentation](https://www.raspberrypi.com/documentation/accessories/camera.html#common-command-line-options)
+
