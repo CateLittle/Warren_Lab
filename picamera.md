@@ -26,13 +26,41 @@ There are different applications that can be accessed via the libcamera-apps
 ```libcamera-hello ``` 
 This line will start the camera and display a preview window for a few seconds
 
-##### Next try the -t<duration> option
+##### Next try the -t duration option
 ```libcamera-hello -t **0**```
 This allows the user to input whatever they desire for 0 as the duration in miliseconds that the image will be displayed
 
-#### 
+##### The Tuning File
+
+**Review this**
+
+### Looking at libcamera-jpeg
+This captures still images
+##### Full resolution JPEG image
+```libcamera-jpeg -o test.jpg```
+This saves the image to test.jpg
+
+##### Changing duration in preview window, and width and height 
+Like the previous libcamera-hello the duration for viewing can be changed so the imaged can remain in the preview window for a longer period.
+The width and height cange the resolution of the captured image
+```libcamera-jpeg -o test.jpg -t 2000 --width 640 --height 480```
+
+### Looking at ```libcamera-still```
+Again this captures a single still image
+However, this method also allows for the ability for timelapse to be captured..
+
+##### Standard still image
+```libcamera-still -o test.jpg```
+
+##### Change the quality of the image..
+100 is the max and 93 is the default 
+Only for JPEG use
+--quality,	-q		JPEG quality <number>
+```libcamera-jpeg -o test.jpg -q 80```
+
 
 ## Using Camera with Buster
+
 
 ## Sources:
 [Raspberry Pi Camera Doc](https://www.raspberrypi.com/documentation/accessories/camera.html)
