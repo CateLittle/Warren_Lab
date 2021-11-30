@@ -1,4 +1,4 @@
-# ** Pi HQ Camera **
+# **Pi HQ Camera**
 
 It is important to note that due to the most recent update of the Raspberry Pi OS to Bullseye, this has led to many of the prior commands utilzied to communicate with the camera unusable. Although there is a new method for command line interfacing, it would seem that the PiCamera python library has been phased out entirely meaning that in Bullseye communicationwith the camera can only be done through the terminal.
 
