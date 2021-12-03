@@ -60,7 +60,23 @@ Only for JPEG use
 
 
 ## Using Camera with Buster
+When using the picamera with Buster Thonny can be used to develop python scripts. See the below documentation for what sort of commands can be used. 
 
+### Using the Command Prompt to Call Python Scripts
+- first need to go inside the folder that holds the python scripts
+    '''cd Desktop/pythonfiles''''
+- next referenced python3 and then stated the name of the file in question
+  '''python 3 [insert file name here] '''
+  current files in use:
+    * photo_still_time.py
+      * This is used for the taking from one to multiple still photos
+    * asdf
+      * This is used for taking as many as the user desires based on their input instead of taking the all successively at once.
+      * This is a manual input one
+    * Timelapse
+      * This records all of the photos in the form of a timelapse...
+    * 
+      * Short video every ---minutes...
 
 ## Sources:
 [Raspberry Pi Camera Doc](https://www.raspberrypi.com/documentation/accessories/camera.html)
