@@ -1,42 +1,39 @@
-import os
-
-#from os import path
-path2='/home/pi/Desktop/pythonfiles/images'
-new_folder = "hi_there2"
-path_new = os.path.join(path2,new_folder)
-os.makedirs(path_new, exist_ok = True)
-
+#This program asks the user how many images they would like to take..
+# Subsequently after 5 seconds each image is saved into a folder indicated by the date
+# the images are labelled with H:M:S
 from picamera import PiCamera
 from time import sleep
 from datetime import datetime
+import os
 camera = PiCamera()
-
-# create the folder
-time_current = str(datetime.now().strftime("%Y-%m-%d_%H:%M"))
-# location for saving image
-location = "/home/pi/Desktop/pythonfiles/images/stillflyimages/%s.jpg"
-
-# inital input of y (yes) or n (no)
-## determines whether user wants an image taken
-img_take= input("Take a photo? (y/n)")
-
-#image number
+# next an input was set so the user can determine how many images they would like to take
+img_num = int(input())
+# set global variable take_image
 take_image = 1
-# save a list of the image 
-while img_take == "y":
-    #camera.start_preview()
+# location for saving image
+path = "/home/pi/Desktop/pythonfiles/images/stillflyimages"
+
+# Taking images
+while take_image <= img_num:
+    # each iteration a new folder will be created unless already created with Year-Month-Date
+    # Also each interation a .jpg file will be created labelled with Hour:Min:Sec
+    ## The current date to label the folder
+    time_folder = str(datetime.now().strftime("%Y-%m-%d"))
+    ## New path was created to save the images to
+    path_new = os.path.join(path,time_folder)
+    os.makedirs(path_new, exist_ok = True)
+    ## the location for the new images was updated
+    location = path_new + "/%s.jpg"
+    # Current time for the file (before the 5 second wait)
+    time_current = datetime.now().strftime("%H:%M:%S")
+    ## now look at image
+    camera.start_preview()
     sleep(5)
-    time_current = str(take_image)+"__"+str(datetime.now().strftime("%Y-%m-%d_%H:%M"))
     # halted the preview
-    #camera.stop_preview()
+    camera.stop_preview()
     # filename was generated
     filename = location % time_current
-    #net the image was saved...
+    # Image was saved to file location
     camera.capture(filename)
-    img_take = input("Take another photo? (y/n)")
-    take_image += 1
-#
-#if img_take == 'n':
-#    visual = input("would you like to see images(y/n)")
-#    if visual == 'y':
-#        
+    # continued to next image
+    take_image += 1   
