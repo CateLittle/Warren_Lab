@@ -64,22 +64,22 @@ When using the picamera with Buster Thonny can be used to develop python scripts
 
 ### Enabled or Disabled the CommandLine or GUI
 - Disable GUI
-    '''sudo raspi-config''' 
+    ```sudo raspi-config```
     Went into the systems options. Then changed the boot so that it boots to the command line with the autologin
     Rebooted the pi
     
 - Enable GUI
-    '''sudo raspi-config'''
+    ```sudo raspi-config```
     Same steps as above, except need to make sure that enable auto login for desktop
     Rebooted using:
-        ''' sudo reboot'''
+        ```sudo reboot```
     
     
 ### Using the Command Prompt to Call Python Scripts
 - first need to go inside the folder that holds the python scripts
-    '''cd Desktop/pythonfiles''''
+    ```cd Desktop/pythonfiles```
 - next referenced python3 and then stated the name of the file in question
-  '''python 3 [insert file name here] '''
+  ```python 3 [insert file name here]```
   current files in use:
     * photo_still_time.py
       * This is used for the taking from one to multiple still photos
