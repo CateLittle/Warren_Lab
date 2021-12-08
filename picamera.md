@@ -62,6 +62,19 @@ Only for JPEG use
 ## Using Camera with Buster
 When using the picamera with Buster Thonny can be used to develop python scripts. See the below documentation for what sort of commands can be used. 
 
+### Enabled or Disabled the CommandLine or GUI
+- Disable GUI
+    '''sudo raspi-config''' 
+    Went into the systems options. Then changed the boot so that it boots to the command line with the autologin
+    Rebooted the pi
+    
+- Enable GUI
+    '''sudo raspi-config'''
+    Same steps as above, except need to make sure that enable auto login for desktop
+    Rebooted using:
+        ''' sudo reboot'''
+    
+    
 ### Using the Command Prompt to Call Python Scripts
 - first need to go inside the folder that holds the python scripts
     '''cd Desktop/pythonfiles''''
@@ -77,6 +90,7 @@ When using the picamera with Buster Thonny can be used to develop python scripts
       * This records all of the photos in the form of a timelapse...
     * 
       * Short video every ---minutes...
+  
 
 ## Sources:
 [Raspberry Pi Camera Doc](https://www.raspberrypi.com/documentation/accessories/camera.html)
