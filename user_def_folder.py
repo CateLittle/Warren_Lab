@@ -13,6 +13,12 @@ take_image = 1
 # location for saving image
 path = "/home/pi/Desktop/pythonfiles/images/stillflyimages"
 
+# Made sure that camera was working properly
+#camera.start_preview()
+sleep(5)
+# halted the preview
+#camera.stop_preview()
+
 # Taking images
 while take_image <= img_num:
     # each iteration a new folder will be created unless already created with Year-Month-Date
@@ -27,10 +33,10 @@ while take_image <= img_num:
     # Current time for the file (before the 5 second wait)
     time_current = datetime.now().strftime("%H:%M:%S")
     ## now look at image
-    camera.start_preview()
+    #camera.start_preview()
     sleep(5)
     # halted the preview
-    camera.stop_preview()
+    #camera.stop_preview()
     # filename was generated
     filename = location % time_current
     # Image was saved to file location
