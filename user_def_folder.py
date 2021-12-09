@@ -15,7 +15,7 @@ path = "/home/pi/Desktop/pythonfiles/images/stillflyimages"
 
 # Made sure that camera was working properly
 #camera.start_preview()
-sleep(5)
+sleep(15) # enough time to adjust according to preview
 # halted the preview
 #camera.stop_preview()
 
