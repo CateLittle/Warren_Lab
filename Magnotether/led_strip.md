@@ -31,8 +31,16 @@
 #### Arduino Library Installation
 > First download the zip file with all relevant code and information from (https://github.com/willdickson/basic_led_strip/tree/master/software/python/basic_led_strip)
 
-> based on the basic_led_strip github documentation those libraries will need to be installed to the IDE. 
-> 
+> Referring to this page the appropriate libraries will need to be installed. This can be done by either manually searching and determining which ones you need to add to your IDE, or by connecting your device and running frimware.ino. By running this file errors will produce indicating un what files you may be a library that you have not yet installed. 
+
+> Some of the primary libraries will be:
+ * Adafruit NeoMatrix
+ * Adafruit NeoPixel
+ * AdruinoJSON
+ * Array
+ * Streaming
+
+> Other libraries may be required but these are the primary ones.
 
 #### Troubleshooting Post-Install
 ###### Issue 1 : Greyed out Port
