@@ -1,7 +1,7 @@
 # Magnothether: Ring Lighting 
 > This provides the entire documentation for installing and using the basic_led_strip library. 
 
-### Arduino Installation on Linux Machine
+## Arduino Installation on Linux Machine
 > Helpful resources:
   * https://www.arduino.cc/en/Guide/Linux
   * https://ubuntu.com/tutorials/install-the-arduino-ide#1-overview
@@ -42,6 +42,9 @@
 
 > Other libraries may be required but these are the primary ones.
 
+#### Uploading to Device
+> Now proceed to upload to the device
+
 #### Troubleshooting Post-Install
 ###### Issue 1 : Greyed out Port
 > Resources:
@@ -69,8 +72,10 @@
   *  Run the following command:
   *     sudo chmod a+rw /dev/ttyUSB0
   * One of these methods should remedy this error
->  
 
+ 
+## Incorporating Python Scripting
+> Now the python scripts that will be used to communicate to the microcontroller can be utililzed in parallel with the already developed 
+ 
 
->  
 
