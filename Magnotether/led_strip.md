@@ -40,15 +40,15 @@
  1. Method 1
   * Check the port under ```Tools -> Port```
   * If you are connected to the correct port then next open up a terminal and issue the following command:
-        > ```sudo usermod -a -G dialout <username>
+>         ```sudo usermod -a -G dialout <username>
   * Then logout and log back in after this command has been issued
   * Try running a basic blick test, if you continue to get the same error then proceed with the next steps
   * Open a new terminal and enter the following command:
-        > ```ls -l <port>``` <- where <port> is the port path ex: /dev/ttyUSB0
+>         ```ls -l <port>``` <- where <port> is the port path ex: /dev/ttyUSB0
   * You should get an output that looks like the following:
-        > ```crw-rw---- 1 <user> <group> 188, 0 5 apr 23.01 <port>```
+>         ```crw-rw---- 1 <user> <group> 188, 0 5 apr 23.01 <port>```
   * Finally add in your username, and the group name that was listed into the following command:
-        > ```sudo usermod -a -G <group> <username>```
+>         ```sudo usermod -a -G <group> <username>```
   * Again try and running a blink sketch, if the same error appears then proceed to method 2
  
  2. Method 2
