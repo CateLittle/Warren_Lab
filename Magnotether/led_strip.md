@@ -53,7 +53,7 @@
  
  2. Method 2
   *  Run the following command:
-        >```sudo chmod a+rw /dev/ttyACM0```
+>        ```sudo chmod a+rw /dev/ttyACM0```
   * One of these methods should remedy this error
 >  
 
