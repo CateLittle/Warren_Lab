@@ -18,6 +18,6 @@
 > Now the application should install, and try initially running the application by writing:
 'Arduino'
 
-> The application is now open, attempt to connect your device by going to tools -> Board -> Board Manager and installing the necessary boards to the IDE.
+> The application is now open, attempt to connect your device by going to ```tools -> Board -> Board Manager``` and installing the necessary boards to the IDE.
 >  
 
