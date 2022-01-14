@@ -23,8 +23,16 @@
 
 > ```Arduino```
 
+> The application is now open, attempt to connect your device by going to ```tools -> Board -> Board Manager``` and installing the necessary boards to the IDE. Then plug your device in, and select the appropriate board that represents it.
+
+> Next connect to the device going to ```Tools -> Board -> Port``` and select the Port which your device is connected to.
+ * NOTE: YOUR PORT MIGHT NOT DISPLAY YOUR DEVICE NAME....IF THIS IS THE CASE TRY ALL THE DIFFERENT PORT OPTIONS AVAILABLE UNTIL ONE WORKS FOR YOUR DEVICE
+
 #### Troubleshooting Post-Install
-###### Issue 1
-> The application is now open, attempt to connect your device by going to ```tools -> Board -> Board Manager``` and installing the necessary boards to the IDE.
+###### Issue 1 : Greyed out Port
+> Resources:
+
+###### Issue 2: ser_open: can't open device: Permission denied
+> 
 >  
 
