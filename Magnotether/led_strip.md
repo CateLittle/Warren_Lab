@@ -37,7 +37,7 @@
  * https://support.arduino.cc/hc/en-us/articles/360016495679-avrdude-ser-open-can-t-open-device-Permission-denied-Linux-
  * https://forum.arduino.cc/t/permission-denied-on-dev-ttyacm0/475568
 >  There are two methods to remedy this issue
-1. Method 1
+* Method 1
   * Check the port under ```Tools -> Port```
   * If you are connected to the correct port then next open up a terminal and issue the following command:
 >         ```sudo usermod -a -G dialout <username>
@@ -51,7 +51,7 @@
 >         ```sudo usermod -a -G <group> <username>```
   * Again try and running a blink sketch, if the same error appears then proceed to method 2
  
-2. Method 2
+* Method 2
   *  Run the following command:
 >        ```sudo chmod a+rw /dev/ttyACM0```
   * One of these methods should remedy this error
