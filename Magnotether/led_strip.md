@@ -30,6 +30,7 @@
 
 #### Arduino Library Installation
 > First download the zip file with all relevant code and information from (https://github.com/willdickson/basic_led_strip/tree/master/software/python/basic_led_strip)
+
 > based on the basic_led_strip github documentation those libraries will need to be installed to the IDE. 
 > 
 
