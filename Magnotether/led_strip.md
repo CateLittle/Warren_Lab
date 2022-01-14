@@ -12,7 +12,7 @@
  
 > After installing, open the terminal, and run the following command to convert from the zip
 
-> ```tar xvf [FILENAME']```
+> ```tar xvf <FILENAME'>```
 
 > After which point go into the newly created unzipped folder and run the following command:
 
@@ -33,6 +33,30 @@
 > Resources:
 
 ###### Issue 2: ser_open: can't open device: Permission denied
-> 
+> Resources:
+ * https://support.arduino.cc/hc/en-us/articles/360016495679-avrdude-ser-open-can-t-open-device-Permission-denied-Linux-
+ * https://forum.arduino.cc/t/permission-denied-on-dev-ttyacm0/475568
+>  There are two methods to remedy this issue
+ 1. Method 1
+  * Check the port under ```Tools -> Port```
+  * If you are connected to the correct port then next open up a terminal and issue the following command:
+        ```sudo usermod -a -G dialout <username>
+  * Then logout and log back in after this command has been issued
+  * Try running a basic blick test, if you continue to get the same error then proceed with the next steps
+  * Open a new terminal and enter the following command:
+        ```ls -l <port>``` <- where <port> is the port path ex: /dev/ttyUSB0
+  * You should get an output that looks like the following:
+        ```crw-rw---- 1 <user> <group> 188, 0 5 apr 23.01 <port>```
+  * Finally add in your username, and the group name that was listed into the following command:
+        ```sudo usermod -a -G <group> <username>```
+  * Again try and running a blink sketch, if the same error appears then proceed to method 2
+ 
+ 2. Method 2
+  *  Run the following command:
+        ```sudo chmod a+rw /dev/ttyACM0```
+  * One of these methods should remedy this error
+>  
+
+
 >  
 
