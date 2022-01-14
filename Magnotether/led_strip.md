@@ -1,4 +1,4 @@
-# Magnotether 
+# Magnothether: Ring Lighting 
 > This provides the entire documentation for installing and using the basic_led_strip library. 
 
 ### Arduino Installation on Linux Machine
