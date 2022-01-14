@@ -40,7 +40,7 @@
 * Method 1
   * Check the port under ```Tools -> Port```
   * If you are connected to the correct port then next open up a terminal and issue the following command:
-> *       ```sudo usermod -a -G dialout <username>
+>  *       ```sudo usermod -a -G dialout <username>
   * Then logout and log back in after this command has been issued
   * Try running a basic blick test, if you continue to get the same error then proceed with the next steps
   * Open a new terminal and enter the following command:
