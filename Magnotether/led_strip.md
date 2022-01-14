@@ -28,6 +28,11 @@
 > Next connect to the device going to ```Tools -> Board -> Port``` and select the Port which your device is connected to.
  * NOTE: YOUR PORT MIGHT NOT DISPLAY YOUR DEVICE NAME....IF THIS IS THE CASE TRY ALL THE DIFFERENT PORT OPTIONS AVAILABLE UNTIL ONE WORKS FOR YOUR DEVICE
 
+#### Arduino Library Installation
+> First download the zip file with all relevant code and information from (https://github.com/willdickson/basic_led_strip/tree/master/software/python/basic_led_strip)
+> based on the basic_led_strip github documentation those libraries will need to be installed to the IDE. 
+> 
+
 #### Troubleshooting Post-Install
 ###### Issue 1 : Greyed out Port
 > Resources:
