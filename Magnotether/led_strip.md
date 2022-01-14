@@ -13,7 +13,7 @@
 
 > After which point go into the newly created unzipped folder and run the following command:
 'sudo ./install.sh'
-    * Try first without running sudo, but if that doesn't work then implement the sudo command
+  * Try first without running sudo, but if that doesn't work then implement the sudo command
    
 > Now the application should install, and try initially running the application by writing:
 'Arduino'
