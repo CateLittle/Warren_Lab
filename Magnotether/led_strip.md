@@ -1,4 +1,4 @@
-# Magnothether: Ring Lighting 
+# Magnothether/BeeCam: Ring Lighting 
 > This provides the entire documentation for installing and using the basic_led_strip library. 
 
 ## Arduino Installation on Linux Machine
@@ -76,6 +76,12 @@
  
 ## Incorporating Python Scripting
 > Now the python scripts that will be used to communicate to the microcontroller can be utililzed in parallel with the already developed 
+
+> The name of the virtual environment created was dubbed ```MagnoBee```
+
  
+###### Issue 3: StaticJsonBuffer is a class from ArduinoJson 5. Please see ///// to learn how to upgrade your program to ArduinoJson version 6
+> This error implies that we need to downgrade the current version to 5.13.4. This should fix this error, but refer to the produced link if it does not
+
 
 
