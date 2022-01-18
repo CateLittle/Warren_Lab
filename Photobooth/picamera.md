@@ -95,4 +95,5 @@ When using the picamera with Buster Thonny can be used to develop python scripts
 ## Sources:
 [Raspberry Pi Camera Doc](https://www.raspberrypi.com/documentation/accessories/camera.html)
 [More Command Line Documentation](https://www.raspberrypi.com/documentation/accessories/camera.html#common-command-line-options)
+[Documentation for PiCamera API](https://picamera.readthedocs.io/en/release-1.13/recipes1.html#capturing-timelapse-sequences)
 
