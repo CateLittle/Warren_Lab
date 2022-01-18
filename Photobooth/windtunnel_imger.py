@@ -41,6 +41,10 @@ while user_init in range(1,5): # going from 1 to 4
         if img_input == "y":
             print("Please enter the number of images you would like to take")
             num_imgs = int(input())
+            # now for taking the x number of images a for loop will be set up to take that many images sequentially..
+            for capture in range(num_imgs)
+                # then introduce the file path and include the data and time into this as well..
+                camera.capture('/home/pi/Desktop/img.jpg')
         else:
             print_stats(img_input)
             user_init = int(input())
@@ -56,8 +60,8 @@ while user_init in range(1,5): # going from 1 to 4
             time_min = int(input())
             print("Enter a whole number of seconds")
             time_sec = int(input())
+            # so now configure the timelapse
 
-            # so now configure the time..
         else:
             print_stats(img_input)
             user_init = int(input())
