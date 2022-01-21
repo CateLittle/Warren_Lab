@@ -11,7 +11,7 @@ import os
 camera = PiCamera()
 
 # defined function for UI printing:
-def print_stats(a):
+def print_stats():
     print('''
     =========================================
     =========================================
