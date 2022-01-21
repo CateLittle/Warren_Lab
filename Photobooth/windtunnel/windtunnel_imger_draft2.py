@@ -29,11 +29,15 @@ def print_stats():
     =========================================
     ''')
 
+# the path for saving the folders to
+path = "/home/pi/Desktop/images/windtunnel_images/"
+
 # next display the function:
 print_stats()
 ## asked user for their option
 user_input = int(input())
-# then the user enters the while loop with another input 
+
+# then the user enters the while loop with another input
 while user_input in range(1,5): # going from 1 to 4
     # follow the below model for an if statement
     # first if statement for user_defined number of images
@@ -44,9 +48,22 @@ while user_input in range(1,5): # going from 1 to 4
             print("Please enter the number of images you would like to take")
             num_imgs = int(input())
             # now for taking the x number of images a for loop will be set up to take that many images sequentially..
-            for capture in range(num_imgs):
+            for capture in range(1, num_imgs+1):
                 # then introduce the file path and include the data and time into this as well..
-                camera.capture('/home/pi/Desktop/img.jpg')
+                time_folder = str(datetime.now().strftime("%Y-%m-%d"))
+                ## New path was created to save the images to
+                path_new = os.path.join(path,time_folder)
+                os.makedirs(path_new, exist_ok = True)
+                # location where file will be saved was updated.
+                location = path_new + "/%s.jpg"
+                # Current time for the file
+                time_current = datetime.now().strftime("%H:%M:%S")
+                # filename was generated
+                filename = location % time_current
+                # Image was saved to file location
+                camera.capture(filename)
+                #pathname = '/home/pi/Desktop/images/windtunnel_images/'+str(capture)+'.jpg'
+                #camera.capture(pathname)
             # print_stats(img_input)
         #     # user_init = int(input())
         else:
@@ -59,16 +76,22 @@ while user_input in range(1,5): # going from 1 to 4
         print("You are requesting to perform a timelapse for X duration, would you like to proceed (y/n)")
         img2_input = input()
         if img2_input == "y":
-            # set the time...
-            print("Enter the whole number of Hours")
-            time_H = int(input()) 
+            print(" First Determine the Delay Time Between shots")
+            print(" ")
             print("Enter whole number of minutes")
             time_min = int(input())
             print("Enter a whole number of seconds")
             time_sec = int(input())
-            # now will perform timelapse...
+            # now will perform     timelapse to start at certain time..
+            ### either current time or another time
+            # then determine how long the time lapse should go for
             #
-            ##
+            
+            # starting the timelapse:
+            if time
+            else:
+                
+            
             #
         else:
             # Determine how the user would like to proceed
@@ -84,3 +107,4 @@ while user_input in range(1,5): # going from 1 to 4
 # last option is to quit the program
 if user_input == 5:
     quit() #this will quit the program
+
