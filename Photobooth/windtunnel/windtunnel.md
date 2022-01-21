@@ -1,5 +1,11 @@
 # Wind Tunnel Fly Trap Imager Program Notes
 
+## 1/20/2022
+* Completed the manual input imaging script for the windtunnel
+    * 
+* Working on developing the timelapse script as well...
+
+
 ## 1/18/2022
 * Need to make sure to consider that when developing this programing to keep it robust but also similar in the same aspect
     * So with this in mind I will try to minimize excessive use of the inputs and try to keep things as quick as possible for the user 
