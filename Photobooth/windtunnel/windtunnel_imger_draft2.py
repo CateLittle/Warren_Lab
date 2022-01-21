@@ -32,7 +32,7 @@ def print_stats():
 # next display the function:
 print_stats()
 ## asked user for their option
-user_input = int(input)
+user_input = int(input())
 # then the user enters the while loop with another input 
 while user_input in range(1,5): # going from 1 to 4
     # follow the below model for an if statement
