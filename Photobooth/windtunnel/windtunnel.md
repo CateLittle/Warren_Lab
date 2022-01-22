@@ -1,5 +1,19 @@
 # Wind Tunnel Fly Trap Imager Program Notes
 
+
+## 1/21/2022
+* code currently works great, but only the manual input
+    * for manual input please include a section for the user to preview the image before saving
+
+* Need to develop a timelapse script
+    * Do this for 5-10fps 
+    * Need to determine the max fps and then makybe try to get 10fps 
+    * Set a start and stop time... and do the while loop until end of time...
+* Need to work with the witty pi to determine whether we can utlize that
+* Also determine a new method for accessing the internet on the pi
+    * What is the method for this?
+
+
 ## 1/20/2022
 * Completed the manual input imaging script for the windtunnel
     * 
