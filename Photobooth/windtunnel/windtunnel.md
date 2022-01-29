@@ -1,6 +1,8 @@
 # Wind Tunnel Fly Trap Imager Program Notes
 
-
+##
+(https://picamera.readthedocs.io/en/release-1.13/)
+* Using the above link in order to work on the timelapse capacity for the Pi and integrating that into the script
 ## 1/21/2022
 * code currently works great, but only the manual input
     * for manual input please include a section for the user to preview the image before saving
