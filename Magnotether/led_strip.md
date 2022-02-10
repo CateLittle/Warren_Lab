@@ -85,3 +85,4 @@
 > Now the python scripts that will be used to communicate to the microcontroller can be utililzed in parallel with the already developed 
 
 > The name of the virtual environment created was dubbed ```MagnoBee```
+ 
