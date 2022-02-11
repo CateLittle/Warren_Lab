@@ -30,7 +30,7 @@ def print_stats():
     ''')
 
 # the path for saving the folders to
-path = "/home/pi/Desktop/images/windtunnel_images/"
+path = "/home/pi/Desktop/images/windtunnel_images/Still_Images/"
 
 # next display the function:
 print_stats()
@@ -41,7 +41,6 @@ user_input = int(input())
 while user_input in range(1,5): # going from 1 to 4
     # follow the below model for an if statement
     # first if statement for user_defined number of images
-    ### ADD IMAGE PREVIEW!!!!
     if user_input == 1:
         print(" You are requesting to take X number of images would you like to proceed (y/n)")
         img1_input = input()
@@ -72,32 +71,33 @@ while user_input in range(1,5): # going from 1 to 4
             print_stats()
             user_input = int(input())
 #   #   #   #   #   #   #   #   #   #   #   #   
-    # # second condition is if user wants to perform a timelapse 
-    # elif user_input == 2:
-    #     print("You are requesting to perform a timelapse for X duration, would you like to proceed (y/n)")
-    #     img2_input = input()
-    #     if img2_input == "y":
-    #         print(" First Determine the Delay Time Between shots")
-    #         print(" ")
-    #         print("Enter whole number of minutes")
-    #         time_min = int(input())
-    #         print("Enter a whole number of seconds")
-    #         time_sec = int(input())
-    #         # now will perform     timelapse to start at certain time..
-    #         ### either current time or another time
-    #         # then determine how long the time lapse should go for
-    #         #
-            
-    #         # starting the timelapse:
-    #         if time
-    #         else:
-                
-            
-    #         #
-    #     else:
-    #         # Determine how the user would like to proceed
-    #         print_stats()
-    #         user_input = int(input())
+    # second condition is if user
+#    elif user_input == 2:
+#        print("You are requesting to perform a timelapse for X duration, would you like to proceed (y/n)")
+#        img2_input = input()
+#        if img2_input == "y":
+         # 
+#            print(" First Determine the Delay Time Between shots")
+#            print(" ")
+#            print("Enter whole number of minutes")
+#            time_min = int(input())
+#            print("Enter a whole number of seconds")
+#            time_sec = int(input())
+#            # now will perform     timelapse to start at certain time..
+#            ### either current time or another time
+#            # then determine how long the time lapse should go for
+#            #
+#            
+#            # starting the timelapse:
+#            if time
+#            else:
+#                
+#            
+#            #
+#        else:
+#            # Determine how the user would like to proceed
+#            print_stats()
+#            user_input = int(input())
     # this condition is if user would like to view the images...
     elif user_input == 3:
         # make sure the user knows that the following only works when GUI is activated on the Pi
@@ -108,4 +108,3 @@ while user_input in range(1,5): # going from 1 to 4
 # last option is to quit the program
 if user_input == 5:
     quit() #this will quit the program
-
