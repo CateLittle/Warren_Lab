@@ -6,23 +6,49 @@ import datetime
 # for any sort of frames per second we need to divid by that amount basically in order to get that many images
 
 
+
+
+# so since we want the camera to take 5 frames per second we need to 
+# ## bascially need to take the sleep and then divide by the frames...
+
+### GOOD BASE:
+for capture in range(1, num_imgs+1):
+    # then introduce the file path and include the data and time into this as well..
+    time_folder = str(datetime.now().strftime("%Y-%m-%d"))
+    ## New path was created to save the images to
+    path_new = os.path.join(path,time_folder)
+    os.makedirs(path_new, exist_ok = True)
+    # location where file will be saved was updated.
+    location = path_new + "/%s.jpg"
+    # Current time for the file
+    time_current = datetime.now().strftime("%H:%M:%S")
+    # filename was generated
+    filename = location % time_current
+    # Image was saved to file location
+    camera.capture(filename)
+    #pathname = '/home/pi/Desktop/images/windtunnel_images/'+str(capture)+'.jpg'
+    #camera.capture(pathname)
+    # print_stats(img_input)
+    #     # user_init = int(input())
+
+
+########################
+### THE CODE:
+# initialized the picamera function from the module..
+
 camera = PiCamera()
 
 # number of minutes to run the timelapse
 ## make this an input
-min_time = 1 # minute
+min_time = int(input()) # minute
 # number of seconds of delay
 sec_delay = 1 #second
 # the frames per second
 ## start with 5 fps
 fps = 5
 
-# so since we want the camera to take 5 frames per second we need to 
-# ## bascially need to take the sleep and then divide by the delay time...
-
-
-
-
+# initialize the start time
+start_time = datetime.now()
 
 #################################
 
