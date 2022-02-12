@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 import os
 # inititialze the camera
 camera = PiCamera()
-
+camera.framerate = 5
 # the path for saving the folders to
 path = "/home/pi/Desktop/images/windtunnel_images/Timelapse/"
 # now initailize a number of minutes that will be run for the timelapse
@@ -40,8 +40,7 @@ while datetime.now() <= time_end:
     time_current = str(count)
     filename = location % time_current
     # saved the image
-    camera.capture(filename)
-    sleep(1/100)
+    camera.capture(filename, use_video_port = True)
     count +=1
 print("count", count)
 frame_rate = count/tdelta.seconds
@@ -125,3 +124,5 @@ print("end", time_end)
 
 ## Step four now develop the for loop
 ##### set the range for time with the current time being what is being iterated through the whole thing. 
+
+##### sleep(1/fps)
