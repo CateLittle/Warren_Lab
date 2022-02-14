@@ -1,9 +1,8 @@
 # This program gives the user the option of whether or not to take a certain number of images or do a timelapse of images
 from picamera import PiCamera
 from time import sleep
-from datetime import datetime
+from datetime import datetime, timedelta
 import os
-
 ## have this script be something that is user friendly... let's try to convert this to a class later on...
 ## so then this can be later utilized as a function and imported to make things easier
 
