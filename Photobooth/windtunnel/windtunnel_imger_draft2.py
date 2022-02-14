@@ -70,34 +70,57 @@ while user_input in range(1,5): # going from 1 to 4
             # Determine how the user would like to proceed
             print_stats()
             user_input = int(input())
-#   #   #   #   #   #   #   #   #   #   #   #   
-    # second condition is if user
-#    elif user_input == 2:
-#        print("You are requesting to perform a timelapse for X duration, would you like to proceed (y/n)")
-#        img2_input = input()
-#        if img2_input == "y":
-         # 
-#            print(" First Determine the Delay Time Between shots")
-#            print(" ")
-#            print("Enter whole number of minutes")
-#            time_min = int(input())
-#            print("Enter a whole number of seconds")
-#            time_sec = int(input())
-#            # now will perform     timelapse to start at certain time..
-#            ### either current time or another time
-#            # then determine how long the time lapse should go for
-#            #
-#            
-#            # starting the timelapse:
-#            if time
-#            else:
-#                
-#            
-#            #
-#        else:
-#            # Determine how the user would like to proceed
-#            print_stats()
-#            user_input = int(input())
+  #   #   #   #   #   #   #   #   #   #   #   
+# second condition is if user
+    elif user_input == 2:
+        print("You are requesting to perform a timelapse for X duration, would you like to proceed (y/n)")
+        img2_input = input()
+        if img2_input == "y":
+            # set the frame rate
+            camera.framrate = 5
+            # set the duration
+            print("Duration (Enter whole number of minutes)")
+            time_min = int(input())
+            print("Duration (Enter a whole number of seconds)")
+            time_sec = int(input())
+           
+            # developed the change in time:
+            tdelta = timedelta(seconds = time_sec, minutes = time_min)
+           
+            # set the start time
+            start_time = datetime.now()
+
+            # set the folder for the timelapse
+            timelapse_folder = str(start_time.strftime("%Y-%m-%d"))
+            path_new = os.path.join(path,timelapse_folder)
+            os.makedirs(path_new, exist_ok = True)
+            # added the the time delta to the before time to get the ending time
+            time_end = start_time + tdelta
+            ## checking how many images were created...
+            #### comment this out when program is successful
+            count = 1
+            # documented the location for where all of the files will be saved
+            ## now in the while loop the images will be added to this path
+            location = path_new + "/%s.jpg"
+            # now before timelapse starts name it based on
+            print("starting the while loop")
+            while datetime.now() <= time_end:
+                # new filename with current time
+                #time_current = datetime.now().strftime("%H:%M:%S")
+                time_current = str(count)
+                filename = location % time_current
+                # saved the image
+                ## set the video port to true in order to enable fast image processing...
+                camera.capture(filename, use_video_port = True)
+                count +=1
+            print("count", count)
+            frame_rate = count/tdelta.seconds
+            print(" frame rate", frame_rate)
+            print("end", time_end)
+        else:
+           # Determine how the user would like to proceed
+            print_stats()
+           user_input = int(input())
     # this condition is if user would like to view the images...
     elif user_input == 3:
         # make sure the user knows that the following only works when GUI is activated on the Pi
