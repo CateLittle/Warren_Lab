@@ -1,3 +1,5 @@
+# Final Version of Script in order to run on the wind tunnel
+
 # This program gives the user the option of whether or not to take a certain number of images or do a timelapse of images
 from picamera import PiCamera
 from time import sleep
