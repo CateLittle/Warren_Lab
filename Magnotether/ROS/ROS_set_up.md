@@ -12,6 +12,10 @@ Source 2: [How To Install ROS Noetic on Ubuntu 20.04 LTS](https://idroot.us/inst
 1. Update System Packages:
 ```
 sudo apt update
+```
+
+update system if there is a new LTS version of Ubuntu
+```
 sudo apt upgrade
 ```
 2. Add the ROS Noetic Repo to system
