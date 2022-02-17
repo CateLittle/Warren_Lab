@@ -7,6 +7,6 @@ Links for installation: `https://linoxide.com/how-to-install-ros-noetic-on-ubunt
 
 1. Update System Packages by running the following command:
 
-`sudo apt update
+``sudo apt update
 
-sudo apt upgrade`
+sudo apt upgrade``
