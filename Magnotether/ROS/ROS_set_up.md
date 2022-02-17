@@ -39,6 +39,8 @@ source ~/.bashrc
 ```
 
 7. Check Installation
-`roscd`
+```
+roscd
+```
 
 
