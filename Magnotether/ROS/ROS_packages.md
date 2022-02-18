@@ -22,6 +22,7 @@ catkin_make
 ```
 
 2. After the workspace has been created:
+http://wiki.ros.org/catkin/Tutorials/create_a_workspace
 > if you are building ROS from source to achieve Python 3 compatibility, 
 > and have setup your system appropriately
 > (ie: have the Python 3 versions of all the required ROS Python packages installed, such as catkin)
