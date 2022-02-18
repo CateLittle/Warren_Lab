@@ -43,12 +43,57 @@ sudo apt install ros-noetic-desktop-full
 > This allows ROS to function
 ```
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+
+```
+verify this with:
+```
+tail ~/.bashrc
+```
+The above command should produce the following output:
+```
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+source /opt/ros/noetic/setup.bash
+```
+Run the next command:
+
+```
 source ~/.bashrc
 ```
-
 7. Check Installation
 ```
 roscd
 ```
+The above command changes the current directory. To further test the installation run **roscore** 
 
+```
+roscore
+```
 
+output:
+```
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.14
+
+NODES
+
+auto-starting new master
+process[master]: started with pid [162314]
+ROS_MASTER_URI=http://flyranch-OptiPlex-7080:11311/
+
+setting /run_id to a8375ae0-904d-11ec-814f-0d913dcb71c8
+process[rosout-1]: started with pid [162343]
+started core service [/rosout]
+
+```
