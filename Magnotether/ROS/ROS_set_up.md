@@ -49,7 +49,7 @@ verify this with:
 ```
 tail ~/.bashrc
 ```
-The above command should produce the following output:
+**output:**
 ```
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -77,7 +77,7 @@ The above command changes the current directory. To further test the installatio
 roscore
 ```
 
-output:
+**output:**
 ```
 SUMMARY
 ========
