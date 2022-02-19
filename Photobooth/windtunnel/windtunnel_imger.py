@@ -1,5 +1,4 @@
 # Final Version of Script in order to run on the wind tunnel
-
 # This program gives the user the option of whether or not to take a certain number of images or do a timelapse of images
 from picamera import PiCamera
 from time import sleep
@@ -48,6 +47,7 @@ while user_input in range(1,5): # going from 1 to 4
         print(" You are requesting to take X number of images would you like to proceed (y/n)")
         img1_input = input()
         if img1_input == "y":
+            camera.resolution = (2592, 1944)
             print("Please enter the number of images you would like to take")
             num_imgs = int(input())
             print("Please specify how much time you want in between images")
@@ -93,6 +93,7 @@ while user_input in range(1,5): # going from 1 to 4
         print("You are requesting to perform a timelapse for X duration, would you like to proceed (y/n)")
         img2_input = input()
         if img2_input == "y":
+            camera.resolution = (2592, 1944)
             # set the frame rate
             camera.framerate = 2
             # set the duration
