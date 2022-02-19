@@ -22,4 +22,4 @@ chmod +x [path to python file]
 ```
 4. The Desktop Shorcut can then be run 
 5. If there is an error with changing the name of the Desktop Shortcut remake it by repeating steps 1-4
-6. 
+
