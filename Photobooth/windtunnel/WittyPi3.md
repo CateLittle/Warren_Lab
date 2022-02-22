@@ -15,7 +15,8 @@ sudo sh install.sh
 ```
 5. Refer to the documentation and that the proper files are present within the wittypi directory
 6. Mount the Witty Pi 3 on to Raspberry Pi, and inset coin cell
-7. Running Software:
+7. Then unplug the power to the Pi and only have power go through the WittyPi
+8. Running Software:
 ```
 ./wittyPi.sh
 ```
