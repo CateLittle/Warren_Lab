@@ -47,12 +47,12 @@ source devel/setup.bash
 
 5.  With the `roscd` command able to direct you to `~/catkin_ws/devel` now enter the src folder and subsequently clone the repository in question
     - Enter the folder:
-    ` 
+    ``` 
     hi 
-    `
+    ```
     - clone the repository
-    `
+    ```
     hi
-    `
+    ```
 CURRENTLY HERE....
 3. 
