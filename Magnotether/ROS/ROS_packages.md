@@ -45,6 +45,10 @@ link: https://answers.ros.org/question/286880/how-to-make-roscd-go-to-catkin_wsd
 source devel/setup.bash
 ```
 
-5.  With the `roscd` command able to direct you to `~/catkin_ws/devel`
+5.  With the `roscd` command able to direct you to `~/catkin_ws/devel` now enter the src folder and subsequently clone the repository in question
+    - Enter the folder:
+    ` hi `
+    - clone the repository
+    `hi`
 CURRENTLY HERE....
 3. 
