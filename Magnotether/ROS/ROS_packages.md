@@ -77,7 +77,33 @@ link: [roscore] http://wiki.ros.org/roscore
 roscore
 ```
 10. In the second terminal run 
+```
+roslaunch basic_led_strip_ros basic_led_strip.launch 
+```
 
-11. 
+11. This will likely produce errors:
+    - **Python Version:** One error that can be fixed is the conversion of all the python files from python 2 to python3. Ros Noetic utilizes python3 so it is important that this is done.
+        - a way that this can be accomplished is to use the python package `2to3` or the package `modernize` these packages both essentially perform the same function. Both methods will be explained below:   
+            1. Python conversion using `2to3`
+                - link: https://docs.python.org/3/library/2to3.html
+                - link: https://www.geeksforgeeks.org/automate-the-conversion-from-python2-to-python3/
+                ```
+                pip install 2to3
+                ```
+                - to change the folder or file in question perform the following (important to note that the file or folder will be overwritten with the python3 
+                version. 
+                ```
+                2to3 [file or folder] -w
+                ```
+            2. Python conversion `using modernize`:
+                - link: https://pypi.org/project/modernize/
+                ```
+                sudo pip install modernize
+                ```
+                - with modernize the file in question will be rewritten to python3 but will have a version saved in pythoon2 
+                ```
+                python3 -m modernize -w [filename.py]
+                ```
+                
 CURRENTLY HERE....
 3. 
