@@ -67,9 +67,17 @@ cd ~/catkin_ws && catkin_make
 ```
 source devel/setup.bash
 ```
-8.adf
-```
+8. Open a second terminal and run `roscd`
+Do this to ensure that it will take you to 
+`~/catkin_ws/devel`
 
+9. In the first terminal run `roscore` this is so that the nodes will be able to communicate with one another:
+link: [roscore] http://wiki.ros.org/roscore
 ```
+roscore
+```
+10. In the second terminal run 
+
+11. 
 CURRENTLY HERE....
 3. 
