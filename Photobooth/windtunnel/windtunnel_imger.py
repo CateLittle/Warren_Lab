@@ -28,6 +28,13 @@ def print_stats():
         5. Quit Program                    
     =========================================
     ''')
+# defined function for getting timelapse start time 
+def get_time():
+    """ This function will get the current time when requested by the user"""
+    time = datetime.now()
+    time_of_release = time.strftime("%Y-%m-%d %H:%M:%S")
+    return time_of_release
+
 
 # the path for saving the folders to
 path = "/home/pi/Desktop/images/windtunnel_images/Still_Images/"
