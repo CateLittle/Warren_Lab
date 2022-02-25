@@ -4,6 +4,7 @@
 ## Build a Catkin Workspace:
 link: [Build Catkin Workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)
 link: https://classes.cs.uchicago.edu/archive/2021/spring/20600-1/computer_setup.html
+additional link: https://wiki.nps.edu/display/RC/Setting+up+a+ROS+package+from+Git
 1. Check to see if there is a Catkin workspace already built:
 
 ```
@@ -45,14 +46,27 @@ link: https://answers.ros.org/question/286880/how-to-make-roscd-go-to-catkin_wsd
 source devel/setup.bash
 ```
 
-5.  With the `roscd` command able to direct you to `~/catkin_ws/devel` now enter the src folder and subsequently clone the repository in question
+5.  With the `roscd` command able to direct you to `~/catkin_ws/devel` now enter the catkin workspaces' src folder and subsequently clone the repository in question to that folder.
     - Enter the folder:
     ``` 
-    hi 
+    cd ~/catkin_ws/src 
     ```
-    - clone the repository
+    - clone the repository from Will Dickson (https://github.com/willdickson/basic_led_strip_ros)
     ```
-    hi
+    git clone https://github.com/willdickson/basic_led_strip_ros.git
     ```
+6. Next...
+```
+cd ~/catkin_ws && catkin_make
+```
+
+7. Then...
+```
+source devel/setup.bash
+```
+8.adf
+```
+
+```
 CURRENTLY HERE....
 3. 
