@@ -21,7 +21,10 @@ mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
 catkin_make
 ```
-
+third: now need to add `source catkin_ws/devel/setup.bash command to your ~/.bashrc file`
+```
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+```
 2. After the workspace has been created (DONT NEED TO DO FOLLOWING STEP):
 http://wiki.ros.org/catkin/Tutorials/create_a_workspace
 > if you are building ROS from source to achieve Python 3 compatibility, 
