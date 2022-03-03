@@ -23,9 +23,8 @@ def print_stats():
     =========================================
         1. User Defined Number of Images   
         2. Timelapse Images for Duration   
-        3. UNDER CONSTRUCTION              
-        4. More Options                    
-        5. Quit Program                    
+        3. UNDER CONSTRUCTION                                 
+        4. Quit Program                    
     =========================================
     ''')
 # defined function for getting timelapse start time 
@@ -94,7 +93,7 @@ while user_input in range(1,5): # going from 1 to 4
             user_input = int(input())
   #   #   #   #   #   #   #   #   #   #   #   
 # second condition is if user
-### During this condition 
+###  While within in input 2 there will be no camera preview.
     elif user_input == 2:
         # path to save the images to the timelapse folder
         path = "/home/pi/Desktop/images/windtunnel_images/Timelapse/"
@@ -131,7 +130,7 @@ while user_input in range(1,5): # going from 1 to 4
             # now before timelapse starts name it based on
             print("starting the while loop")
             # started a preview so that the user can be able to see the image
-            camera.start_preview()
+            #camera.start_preview()
             while datetime.now() <= time_end:
                 # new filename with current time
                 #time_current = datetime.now().strftime("%H:%M:%S")
@@ -144,7 +143,7 @@ while user_input in range(1,5): # going from 1 to 4
                 #camera.capture(filename)
                 
                 count +=1
-            camera.stop_preview()
+            #camera.stop_preview()
             print("count", count)
             frame_rate = count/tdelta.seconds
             print(" frame rate", frame_rate)
@@ -162,5 +161,5 @@ while user_input in range(1,5): # going from 1 to 4
         # add the rest of it...
 
 # last option is to quit the program
-if user_input == 5:
+if user_input == 4:
     quit() #this will quit the program
