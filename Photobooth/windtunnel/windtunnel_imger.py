@@ -94,6 +94,7 @@ while user_input in range(1,5): # going from 1 to 4
             user_input = int(input())
   #   #   #   #   #   #   #   #   #   #   #   
 # second condition is if user
+### During this condition 
     elif user_input == 2:
         # path to save the images to the timelapse folder
         path = "/home/pi/Desktop/images/windtunnel_images/Timelapse/"
