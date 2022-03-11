@@ -2,9 +2,13 @@
 > This provides the entire documentation for installing and using the basic_led_strip library. 
 
 ## Arduino Installation on Linux Machine
+> UPDATE USE THIS GUIDE:
+  * **https://linoxide.com/how-to-install-arduino-ide-on-ubuntu-20-04/**
+
 > Helpful resources:
   * https://www.arduino.cc/en/Guide/Linux
   * https://ubuntu.com/tutorials/install-the-arduino-ide#1-overview
+ 
 
 #### Initial Installation
 > See the below site to install the latest version of Arduino for linux
