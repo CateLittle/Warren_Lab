@@ -110,5 +110,11 @@ roslaunch basic_led_strip_ros basic_led_strip.launch
              
                 
 CURRENTLY HERE....
-3. PLug in the device
-* can use lsub to determine where the device was located. to determine the exact usb port if an issue arises there
+3. So attempt using Test Service node in order to determine if this node is working...
+```
+rosrun basic_led_strip_ros test_service.py
+```
+
+
+
+roslaunch -> running rosrun more than once... it is a master control mechanism
