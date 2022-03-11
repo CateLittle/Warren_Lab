@@ -104,6 +104,11 @@ roslaunch basic_led_strip_ros basic_led_strip.launch
                 ```
                 python3 -m modernize -w [filename.py]
                 ```
+                Mass convert the python scripts..
+           3. It is possible that the device is not plugged in:
+              - In which case use lsub command in the termbinda to determine the exact port of the device
+             
                 
 CURRENTLY HERE....
-3. 
+3. PLug in the device
+* can use lsub to determine where the device was located. to determine the exact usb port if an issue arises there
