@@ -1,1 +1,1 @@
-# RaspberryPi
+# RaspberryPi Connection and Troubleshooting Solutions
