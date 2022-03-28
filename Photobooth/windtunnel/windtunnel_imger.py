@@ -4,6 +4,7 @@ from picamera import PiCamera
 from time import sleep
 from datetime import datetime, timedelta
 import os
+from sys import exit
 ## have this script be something that is user friendly... let's try to convert this to a class later on...
 ## so then this can be later utilized as a function and imported to make things easier
 
@@ -68,7 +69,7 @@ while user_input in range(1,5): # going from 1 to 4
                 # location where file will be saved was updated.
                 location = path_new + "/%s.jpg"
                 # Current time for the file
-                time_current = datetime.now().strftime("%H:%M:%S")
+                time_current = datetime.now().strftime("%H-%M-%S")
                 # filename was generated
                 filename = location % time_current
                 # preview the images...
@@ -135,7 +136,7 @@ while user_input in range(1,5): # going from 1 to 4
                 # new filename with current time
                 #time_current = datetime.now().strftime("%H:%M:%S")
                 time_current = datetime.now()
-                time_current_split = str(time_current.strftime("%H:%M:%S.%f"))
+                time_current_split = str(time_current.strftime("%H-%M-%S.%f"))
                 filename = location % time_current_split
                 # saved the image
                 ## set the video port to true in order to enable fast image processing...
@@ -163,3 +164,6 @@ while user_input in range(1,5): # going from 1 to 4
 # last option is to quit the program
 if user_input == 4:
     quit() #this will quit the program
+    #exit()
+
+
