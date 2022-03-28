@@ -12,7 +12,7 @@
 ## Creation of Desktop Shortcut
 Reference: https://www.hackster.io/kamal-khan/desktop-shortcut-for-python-script-on-raspberry-pi-fd1c63
 
-1. Created a text file on the desktop 
+1. Created a new .desktop file on the desktop 
 > Make sure to save the file to the desktop. And provide your desired name
 3. Inputted the following..
 ```
